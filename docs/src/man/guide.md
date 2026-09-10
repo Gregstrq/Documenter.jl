@@ -37,6 +37,13 @@ $ julia --project=docs
 This will create a `Project.toml` file in the `docs/` subdirectory and add `Documenter` and the top-level package as available packages.
 See also the [Pkg.jl](https://github.com/JuliaLang/Pkg.jl/) documentation on working with [project workspaces](https://pkgdocs.julialang.org/v1/toml-files/#The-[workspace]-section) and [environments](https://pkgdocs.julialang.org/v1/environments/).
 
+For Julia v1.12, one should also manually add
+```
+[sources]
+PkgName = {path = ".."}
+```
+to the `docs/Project.toml` file. This is done automatically in Julia v1.13.
+
 ### Julia v1.11 and earlier
 For Julia versions v1.11 and earlier, creating a separate project in `docs/` is the standard approach.
 To do this, navigate to your package's root folder and do
