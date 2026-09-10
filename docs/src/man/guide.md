@@ -30,7 +30,8 @@ Next, open up a Julia REPL in the `docs` subdirectory, enter `pkg>` mode with th
 
 ```
 $ julia --project=docs
-(PkgName/docs) pkg> add Documenter PkgName
+(PkgName/docs) pkg> add Documenter
+(PkgName/docs) pkg> dev ..
 ```
 
 This will create a `Project.toml` file in the `docs/` subdirectory and add `Documenter` and the top-level package as available packages.
